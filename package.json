@@ -22,6 +22,7 @@
     "dev": "vite",
     "format": "prettier --check --ignore-path .gitignore ./src",
     "format:fix": "prettier --write --ignore-path .gitignore ./src",
+    "prepare": "npm run build",
     "release": "semantic-release"
   },
   "dependencies": {
