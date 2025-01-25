@@ -1,14 +1,18 @@
 {
   "name": "uic-pack",
   "description": "",
-  "keywords": ["tailwind", "UI", "components"],
+  "keywords": [
+    "tailwind",
+    "UI",
+    "components"
+  ],
   "bugs": "https://github.com/Reterics/uic-pack/issues",
   "license": "MIT",
   "version": "0.0.1",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Reterics/uic-pack"
+    "url": "git+https://github.com/Reterics/uic-pack.git"
   },
   "main": "dist/uic-pack.umd.js",
   "module": "dist/uic-pack.es.js",

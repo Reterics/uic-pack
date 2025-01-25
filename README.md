@@ -60,3 +60,9 @@ import { StyledInput, FormRow } from "uic-pack";
 
  - If you have a feature request, [create an issue](https://github.com/Reterics/uic-pack/issues) or [make a pull request ](https://github.com/Reterics/uic-pack/pulls)
  - If you have a bug to report, [you can create an issue here.](https://github.com/Reterics/uic-pack/issues) Please try to write as much details as possible to help reproduce and fix it.
+
+For more details please read the [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines and details.
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
