@@ -22,6 +22,12 @@
         "pkgRoot": "dist"
       }
     ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["package.json", "package-lock.json", "pnpm-lock.yaml", "README.md", "LICENSE"]
+      }
+    ],
     "@semantic-release/github"
   ]
 }
