@@ -2,8 +2,9 @@
 
 UI Component Pack for React + Tailwind Projects
 
-## Getting started 🚀
+![Preview](./preview.png)
 
+## Getting started 🚀
 
 ### Install
 

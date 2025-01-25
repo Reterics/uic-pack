@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2017",
+    "moduleResolution": "nodenext",
+    "noEmit": true,
+    "jsx": "react",
+    "allowImportingTsExtensions": true,
+    "esModuleInterop": true
+  },
+  "include": ["./.storybook/**/*", "./src/**/*.stories.*"],
+}
