@@ -17,8 +17,8 @@ export interface StyledSelectProps {
   name?: string
   label?: string | number | boolean
   options: StyledSelectOption[]
-  className?: string,
-  style?: CSSProperties,
+  className?: string
+  style?: CSSProperties
   compact?: boolean
 }
 
@@ -29,7 +29,7 @@ export function StyledSelect({
   label,
   options,
   compact,
-  style
+  style,
 }: Readonly<StyledSelectProps>) {
   return (
     <div

@@ -2,32 +2,31 @@
 
 UI Component Pack for React + Tailwind Projects
 
-![Preview](./preview.png)
+![Preview](docs/preview.png)
 
 ## Getting started 🚀
 
 ### Install
 
+Install as dependency via your package manager
  - use npm
 ```bash
+# for npm
 npm i uic-pack
-```
 
- - use yarn
-```bash
+# for yarn
 yarn add uic-pack
-```
 
- - use pnpm
-```bash
+# for pnpm
 pnpm install uic-pack
 ```
+
 ### Usage
 
 Import working React components from
 
 ```javascript
-import { StyledInput, FormRow } from "@reterics/uic-pack";
+import { StyledInput, FormRow } from "uic-pack";
 
 
 <FormRow>
@@ -49,6 +48,7 @@ import { StyledInput, FormRow } from "@reterics/uic-pack";
 
 ### Available components
 
+- TableViewComponent ![Preview](docs/table.png)
 - FormRow
 - StyledFile
 - StyledInput
