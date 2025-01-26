@@ -1,7 +1,7 @@
 {
   "name": "uic-pack",
   "description": "UI Component Pack to speed up React + TailwindCSS development",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "keywords": [
     "tailwind",
     "UI",
@@ -23,7 +23,8 @@
   "module": "dist/uic-packjs",
   "types": "dist/uic-pack.d.ts",
   "files": [
-    "dist", "docs"
+    "dist",
+    "docs"
   ],
   "scripts": {
     "build": "vite build",
