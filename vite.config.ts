@@ -16,11 +16,11 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
       name: "uic-pack",
-      fileName: (format) => `uic-pack.${format}.js`
+      formats: ["es"],
     },
     cssCodeSplit: false,
     rollupOptions: {
-      external: ["react", "react-dom"]
+      external: ["react", "react-dom", "react/jsx-runtime"]
     }
   },
 });

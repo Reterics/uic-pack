@@ -1,6 +1,5 @@
-import {ChangeEvent, useState} from 'react'
+import React, {ChangeEvent, useState} from 'react'
 import {fileToDataURL} from '../../utils/form'
-import React from 'react'
 
 export interface StyledFileProps {
   name: string

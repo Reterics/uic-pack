@@ -27,7 +27,7 @@ pnpm install uic-pack
 Import working React components from
 
 ```javascript
-import { StyledInput, FormRow } from "uic-pack";
+import { StyledInput, FormRow } from "@reterics/uic-pack";
 
 
 <FormRow>

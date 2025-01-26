@@ -14,9 +14,10 @@
     "type": "git",
     "url": "git+https://github.com/Reterics/uic-pack.git"
   },
-  "main": "dist/uic-pack.umd.js",
-  "module": "dist/uic-pack.es.js",
+  "main": "dist/uic-pack.js",
+  "module": "dist/uic-packjs",
   "types": "dist/uic-pack.d.ts",
+  "files": ["dist"],
   "scripts": {
     "build": "vite build",
     "dev": "vite",
@@ -28,6 +29,10 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "peerDependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

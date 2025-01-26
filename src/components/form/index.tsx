@@ -1,16 +1,6 @@
-export {StyledInput} from './StyledInput'
-export type {StyledInputProps} from './StyledInput'
+export * from './StyledInput'
+export * from './StyledMultiSelect'
+export * from './StyledSelect'
+export * from './StyledFile'
 
-export {StyledMultiSelect} from './StyledMultiSelect'
-export type {
-  StyledMultiSelectProps,
-  StyledSelectOption,
-} from './StyledMultiSelect'
-
-export {StyledSelect} from './StyledSelect'
-export type {StyledSelectProps} from './StyledSelect'
-
-export {StyledFile} from './StyledFile'
-export type {StyledFileProps} from './StyledFile'
-
-export {FormRow} from './FormRow'
+export * from './FormRow'

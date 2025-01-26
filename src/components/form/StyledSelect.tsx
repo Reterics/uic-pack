@@ -1,4 +1,4 @@
-import React, {ReactEventHandler} from 'react'
+import React, {CSSProperties, ReactEventHandler} from 'react'
 import {StyledSelectOption} from './StyledMultiSelect'
 
 export const stringsToOptions = (
@@ -17,7 +17,8 @@ export interface StyledSelectProps {
   name?: string
   label?: string | number | boolean
   options: StyledSelectOption[]
-  className?: string
+  className?: string,
+  style?: CSSProperties,
   compact?: boolean
 }
 
@@ -28,6 +29,7 @@ export function StyledSelect({
   label,
   options,
   compact,
+  style
 }: Readonly<StyledSelectProps>) {
   return (
     <div
@@ -36,6 +38,7 @@ export function StyledSelect({
           ? 'w-full group flex flex-row items-center justify-between'
           : 'relative z-0 w-full group'
       }
+      style={style}
     >
       {label !== false && (
         <label

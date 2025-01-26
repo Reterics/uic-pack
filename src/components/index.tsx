@@ -1,4 +1,4 @@
 export * from './form/index'
 
-export {DraggableDiv} from './DraggableDiv'
-export {MenuBar} from './MenuBar'
+export * from './DraggableDiv'
+export * from './MenuBar'
