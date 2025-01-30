@@ -45,6 +45,33 @@ import { StyledInput, FormRow } from "uic-pack";
 </FormRow>
 ```
 
+#### Importing styles
+
+Add uic-pack css to your global.css file
+```css
+@import 'uic-pack/dist/uic-pack.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+```
+
+
+or add uic-pack to your tailwind.config.ts
+```typescript
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
+  content: [
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/uic-pack/dist/uic-pack.js',
+  ],
+  plugins: [],
+}
+export default config
+
+```
 
 ### Available components
 
