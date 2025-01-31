@@ -22,6 +22,13 @@ import {
   BsSortUp,
 } from 'react-icons/bs'
 import {StyledInput, StyledSelect, StyledSelectOption} from './form'
+import {
+  groupedButtonLeftClasses,
+  groupedButtonMiddleClasses,
+  groupedButtonRightClasses,
+  titleBarClasses,
+  windowClasses,
+} from '../twStyles'
 export const BSIconDimensions = {
   height: '1.25rem',
   width: '1.4rem',
@@ -111,7 +118,7 @@ const TableViewHeader = ({
   }
 
   return (
-    <thead className='text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
+    <thead className={titleBarClasses}>
       <tr>
         {header.map((head, index) => (
           <th
@@ -354,12 +361,12 @@ export const TableViewActions = ({
     selected: MouseEventHandler<HTMLButtonElement> | undefined
   ) => {
     if (selected === first) {
-      return 'px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white'
+      return groupedButtonLeftClasses
     }
     if (selected === last) {
-      return 'px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-r border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white'
+      return groupedButtonRightClasses
     }
-    return 'px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-r border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white'
+    return groupedButtonMiddleClasses
   }
 
   return (
@@ -446,7 +453,11 @@ export function TableViewComponent({
         })
   ).slice(0, tableLimits ?? 10000)
   return (
-    <table className='text-sm text-left text-gray-500 dark:text-gray-400 max-w-screen-xl w-full shadow-md self-center'>
+    <table
+      className={
+        'text-left max-w-screen-xl w-full shadow-md self-center' + windowClasses
+      }
+    >
       <TableViewHeader
         header={_header}
         orderType={orderType}

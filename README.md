@@ -83,6 +83,7 @@ export default config
 - StyledMultiSelect
 - DraggableDiv
 - MenuBar
+- DialogComponent
 
 ## Contribute
 
