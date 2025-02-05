@@ -20,7 +20,7 @@
     "url": "git+https://github.com/Reterics/uic-pack.git"
   },
   "main": "dist/uic-pack.js",
-  "module": "dist/uic-packjs",
+  "module": "dist/uic-pack.js",
   "types": "dist/uic-pack.d.ts",
   "files": [
     "dist",
